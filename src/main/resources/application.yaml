@@ -1,8 +1,8 @@
 server:
-  port: 8761
+  port: ${SERVER_PORT}
 
 spring:
   application:
     name: registry-service
   config:
-    import: "configserver:http://localhost:8088"
+    import: "configserver:${CONFIG_SERVER_URL}"
