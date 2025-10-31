@@ -1,5 +1,11 @@
 spring:
   application:
     name: registry-service
+  profiles:
+    active: dev
   config:
     import: "configserver:${CONFIG_SERVER_URL}"
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_CLIENT_URL:http://localhost:8020/eureka/}
