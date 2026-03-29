@@ -12,7 +12,7 @@ It is built on top of **Spring Cloud Netflix Eureka Server** and allows all othe
 * Spring Boot
 * Lombok
 * Maven
-
+* Netflix Eureka Server
 ---
 
 # Architecture
